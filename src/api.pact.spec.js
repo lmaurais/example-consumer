@@ -16,14 +16,14 @@ describe('API Pact test', () => {
   describe('retrieving a product', () => {
     test('ID 10 exists', async () => {
       // Arrange
-      const xexpectedProduct = {
+      const expectedProduct = {
         id: '10',
         type: 'CREDIT_CARD',
         name: '28 Degrees'
       };
 
       // Uncomment to see this fail
-      const expectedProduct = { id: '10', type: 'CREDIT_CARD', name: '28 Degrees', price: 30.0, newBreakingField: 22}
+      const XexpectedProduct = { id: '10', type: 'CREDIT_CARD', name: '28 Degrees', price: 30.0, newBreakingField: 22}
 
       mockProvider
         .given('a product with ID 10 exists')
